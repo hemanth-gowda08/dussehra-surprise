@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Dussehra, Neeth</title>
+<meta name="description" content="A small Dussehra surprise, made for Neeth.">
+<meta name="theme-color" content="#FBF6EB">
+<meta property="og:title" content="Happy Dussehra, Neeth">
+<meta property="og:description" content="A little festive detour from the usual wishes.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="hero-bloom" id="heroBloom" aria-hidden="true"></div>
+  <div class="hero-copy">
+    <h1 class="hero-title">
+      <span class="line"><span>Happy Dussehra,</span></span>
+      <span class="line"><span>Neeth.</span></span>
+    </h1>
+    <p class="hero-sub">A little festive detour from the usual wishes.</p>
+    <p class="hero-note">I know it's been a busy week. Get some rest, make a little time, and open this whenever you're free.</p>
+    <button class="btn" id="openBtn" type="button" aria-expanded="false" aria-controls="main">Okay, what's this?</button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1" hidden>
+
+  <section class="photos" aria-labelledby="photosTitle">
+    <h2 id="photosTitle">Two good ones.</h2>
+    <div class="gallery">
+      <figure class="shot shot-a" tabindex="0">
+        <div class="frame"><img src="Image1.jpeg" alt="Neeth, photo one" loading="eager" decoding="async"></div>
+        <figcaption>A little moment worth keeping.</figcaption>
+      </figure>
+      <figure class="shot shot-b" tabindex="0">
+        <div class="frame"><img src="Image2.jpeg" alt="Neeth, photo two" loading="eager" decoding="async"></div>
+        <figcaption>And another one, just because.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="wishes" aria-labelledby="wishTitle">
+    <h2 id="wishTitle">One last thing.</h2>
+    <p class="wish-hint">Tap each marigold.</p>
+    <div class="blooms" id="blooms" role="group" aria-label="Five marigolds, each with a wish"></div>
+    <div class="card" id="card" aria-live="polite">
+      <p class="card-empty" id="cardEmpty">Five small wishes are waiting.</p>
+      <ul id="wishList"></ul>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="finalTitle">
+    <h2 id="finalTitle" class="sr-only">The message</h2>
+    <p class="message">Happy Dussehra, Neeth! Hope you have a lovely day, plenty of good moments, and lots of new places to explore.</p>
+    <p class="message soft">Just thought I'd make your usual festival wish a little different this time. Have a great one!</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Made for Neeth. Happy Dussehra.</p>
+  <a href="#top" id="topLink">Back to the top</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
